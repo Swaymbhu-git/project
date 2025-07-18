@@ -21,9 +21,7 @@ function App() {
   }
 
   const handleContinue = () => {
-    if (selectedRole === 'teacher') {
-      setCurrentView('pollCreate')
-    }
+    setCurrentView('pollCreate')
   }
 
   const handleAddOption = () => {
