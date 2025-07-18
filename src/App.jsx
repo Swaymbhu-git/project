@@ -7,8 +7,8 @@ function App() {
   const [question, setQuestion] = useState('')
   const [timer, setTimer] = useState('60 seconds')
   const [options, setOptions] = useState([
-    { id: 1, text: 'Rahul Bajaj' },
-    { id: 2, text: 'Rahul Bajaj' }
+    { id: 1, text: 'Himanshu Patel' },
+    { id: 2, text: 'Himanshu Patel' }
   ])
   const [correctAnswers, setCorrectAnswers] = useState({
     1: 'Yes',
@@ -27,7 +27,7 @@ function App() {
 
   const handleAddOption = () => {
     const newId = Math.max(...options.map(o => o.id)) + 1
-    setOptions([...options, { id: newId, text: 'Rahul Bajaj' }])
+    setOptions([...options, { id: newId, text: 'Your Name' }])
     setCorrectAnswers({ ...correctAnswers, [newId]: 'Yes' })
   }
 
@@ -71,7 +71,7 @@ function App() {
                     className="question-textarea"
                     value={question}
                     onChange={handleQuestionChange}
-                    placeholder="Rahul Bajaj"
+                    placeholder="Ask!!"
                   />
                   <div className="character-count">0/100</div>
                 </div>
@@ -107,6 +107,7 @@ function App() {
                         type="text"
                         className="option-input"
                         value={option.text}
+                        placeholder="Your Name"
                         onChange={(e) => handleOptionChange(option.id, e.target.value)}
                       />
                     </div>
