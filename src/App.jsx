@@ -46,7 +46,7 @@ function App() {
             >
               <h3 className="card-title">I'm a Teacher</h3>
               <p className="card-description">
-                Submit answers and view live poll results in real-time.
+                Create and manage polls, view responses, and engage with students in real-time during lectures.
               </p>
             </div>
           </div>
